@@ -6,12 +6,7 @@ let a = prompt("Enter the first number: ");
 let b = prompt("Enter the second number: ");
 let c = prompt("Enter the third number: ");
 
-var form = document.getElementById('form');
-    number = document.getElementById('number');
-form.onsubmit = function() {
-   var variable = number.value;
-   alert( variable );
-};
+
 
 // calculate discriminant
 let discriminant = b * b - 4 * a * c;
