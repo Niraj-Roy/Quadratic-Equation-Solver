@@ -1,40 +1,50 @@
-// program to solve quadratic equation
-let root1, root2;
 
-// take input from the user
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
-
-
-
-// calculate discriminant
-let discriminant = b * b - 4 * a * c;
-
-// condition for real and different roots
-if (discriminant > 0) {
-    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-
-    // result
-    window.alert(`The roots of quadratic equation are ${root1} and ${root2}`);
+function getID(i) {
+  return document.getElementById(i);
+}
+function getVal(i) {
+  return getID(i).value;
 }
 
-// condition for real and equal roots
-else if (discriminant == 0) {
-    root1 = root2 = -b / (2 * a);
-
-    // result
-    window.alert(`The roots of quadratic equation are ${root1} and ${root2}`);
+function solve() {
+  // IMPLEMENT ME, PLEASE!
 }
 
-// if roots are not real
-else {
-    let realPart = (-b / (2 * a)).toFixed(2);
-    let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+var submitButton = document.getElementById("submit");
+submitButton.onclick = function() {
+  solve();	
+};
 
-    // result
-    window.alert(
-    `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
-  );
+/* Focusing on the solve() function */
+function solve() {
+  var a = parseInt( getVal("a") ),
+    b = parseInt( getVal("b") ),
+    c = parseInt( getVal("c") );
+  if ( isNaN(a) ) { a = 1; }
+  if ( isNaN(b) ) { b = 0; }
+  if ( isNaN(c) ) { c = 0; }
+  var D = b*b - 4 * a * c;	
+  var dis = getID("DIS"),
+    nos = getID("NOS"),
+    s1  = getID("S1"),
+    s2  = getID("S2");
+  nos.style.display = "none";
+  s1.innerHTML = "";
+  s2.innerHTML = "";
+  dis.innerHTML = 'Discriminant = <span id="D"></span>';
+  var d = getID("D");
+  d.innerHTML = D.toString();
+  if (D < 0) {
+    nos.style.display = "block";
+  } 
+  else if (D == 0) {
+    var S = -b / (2 * a);
+    s1.innerHTML = S.toString();
+  } 
+  else {
+    var S1 = ( -b + Math.sqrt(D) ) / (2 * a),
+      S2 = ( -b - Math.sqrt(D) ) / (2 * a);
+    s1.innerHTML = S1.toString();
+    s2.innerHTML = S2.toString();
+  }
 }
