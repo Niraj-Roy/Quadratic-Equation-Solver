@@ -23,7 +23,7 @@ else if (discriminant == 0) {
     root1 = root2 = -b / (2 * a);
 
     // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+    window.alert(`The roots of quadratic equation are ${root1} and ${root2}`);
 }
 
 // if roots are not real
