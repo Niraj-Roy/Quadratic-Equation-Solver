@@ -2,9 +2,9 @@
 let root1, root2;
 
 // take input from the user
-let a = ("Enter the first number: ");
-let b = ("Enter the second number: ");
-let c = ("Enter the third number: ");
+let a = prompt("Enter the first number: ");
+let b = prompt("Enter the second number: ");
+let c = prompt("Enter the third number: ");
 
 var form = document.getElementById('form');
     number = document.getElementById('number');
@@ -22,7 +22,7 @@ if (discriminant > 0) {
     root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
 
     // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+    window.alert(`The roots of quadratic equation are ${root1} and ${root2}`);
 }
 
 // condition for real and equal roots
@@ -39,7 +39,7 @@ else {
     let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
 
     // result
-    console.log(
+    window.alert(
     `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
   );
 }
