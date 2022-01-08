@@ -1,40 +1,26 @@
+<!-- This file is: index.html -->
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Quad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <h1>Solve Any Quadratic Equation</h1>
+    <div id="input">
+      <input id="a"> x<sup>2</sup> <input id="b"> x <input id="c"> = 0
+    </div>
+    <button id="submit">Solve</button>
+    <div id="answers">
+      <p id="DIS"></p>
+      <p id="NOS">No solutions</p>
+      <p id="S1"></p>
+      <p id="S2"></p>
+    </div>
 
-<head>
-
-<title> Quadratic Equation Solver </title>
-<style>
-.black {
-  font-size: 4rem;
-  margin: 5vh auto 0 auto;
-  box-shadow:0px 0px 20px 8px rgba(153,153,153,1)
-  color: blue;
-}
-</style>
-
-</head>
-
-<body>
-<div class="black"> A simple Quadratic Equation Solver App...
-<br>
-
-A dialogue box will appear asking u numbers , whose <br>
-
-roots u want to find , put it there and u will get the roots..
-
-</div>
-
-<script src="./script.js"> </script>
-<style> 
-
-* {
-   background-color:red;
-}
-
-</style>
-</body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
