@@ -1,0 +1,33 @@
+
+h1 {
+  font-family: Arial, Calibry, sans-serif;
+  margin-bottom: 30px;
+}
+
+body {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  width: 80px;	
+  font-size: 28px;
+}
+
+#input {
+  font-size: 28px;
+}
+
+button {
+  margin: 30px auto;
+  padding: 10px 15px;
+  background-color: blue;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#NOS {
+  display: none;	
+}
