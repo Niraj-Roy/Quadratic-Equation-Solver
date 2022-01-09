@@ -7,7 +7,7 @@ function getVal(i) {
 }
 
 function solve() {
-  // IMPLEMENT ME, PLEASE!
+  
 }
 
 var submitButton = document.getElementById("submit");
@@ -15,7 +15,7 @@ submitButton.onclick = function() {
   solve();	
 };
 
-/* Focusing on the solve() function */
+
 function solve() {
   var a = parseInt( getVal("a") ),
     b = parseInt( getVal("b") ),
