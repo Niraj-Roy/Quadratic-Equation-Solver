@@ -19,12 +19,12 @@ body {
 
 input {
   text-align: center;
-  width: 80px;	
-  font-size: 28px;
+  width: 40px;	
+  font-size: 14px;
 }
 
 #input {
-  font-size: 28px;
+  font-size: 14px;
 }
 
 button {
