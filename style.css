@@ -34,7 +34,7 @@ button {
   display: none;	
 }
 
-#answers { 
+.answers { 
      height: 70px;
      line-height: 70px;
      padding: 16px 8px;
