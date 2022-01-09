@@ -11,6 +11,7 @@ h1 {
 body {
   font-family: Georgia, serif;
   text-align: center;
+  background-color : blue ;
 }
 
 input {
