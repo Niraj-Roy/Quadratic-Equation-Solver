@@ -33,3 +33,10 @@ button {
 #NOS {
   display: none;	
 }
+
+#answers { 
+     height: 70px;
+     line-height: 70px;
+     padding: 16px 8px;
+     font-size: 25px;
+       }
