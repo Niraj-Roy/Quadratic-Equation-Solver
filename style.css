@@ -16,6 +16,16 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
+.elonmusk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
 h1 {
   font-family: Arial, Calibry, sans-serif;
   margin-bottom: 30px;
